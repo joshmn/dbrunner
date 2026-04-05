@@ -21,7 +21,11 @@ module Rails
           exit 1
         end
 
-        boot_application!
+        if respond_to?(:boot_application!, true)
+          boot_application!
+        else
+          require_application_and_environment!
+        end
 
         sql = resolve_sql(sql_or_file)
         connection = resolve_connection
