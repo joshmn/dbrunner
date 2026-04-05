@@ -31,7 +31,7 @@ jobs:
           bundler-cache: false
       - name: Install dependencies
         run: |
-          gem update --system
+          gem update --system 3.5.22
           gem install bundler
           bundle install
       - name: Run tests
