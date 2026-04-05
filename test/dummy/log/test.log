@@ -382,3 +382,129 @@ Generating image variants require the image_processing gem. Please add `gem "ima
   [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
 Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
   [1m[35mSQL (1.0ms)[0m  [1m[34mSELECT * FROM dbrunner_test[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.8ms)[0m  [1m[34mSELECT count(*) as total FROM dbrunner_test
+[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT * FROM dbrunner_test WHERE name = 'alice'[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.8ms)[0m  [1m[34mSELECT name, age FROM dbrunner_test ORDER BY name[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT * FROM dbrunner_test WHERE name = 'nobody'[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.8ms)[0m  [1m[34mSELECT * FROM dbrunner_test[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.8ms)[0m  [1m[35mNOT VALID SQL AT ALL[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT name, age FROM dbrunner_test WHERE name = 'carol'[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT name, age FROM dbrunner_test ORDER BY name[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT name, age FROM dbrunner_test LIMIT 1[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.8ms)[0m  [1m[34mSELECT name FROM dbrunner_test ORDER BY name[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (1.0ms)[0m  [1m[34mSELECT name, age FROM dbrunner_test WHERE name = 'alice'[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT count(*) as total FROM dbrunner_test[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.8ms)[0m  [1m[34mSELECT count(*) as total FROM dbrunner_test[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('dave', 40)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.9ms)[0m  [1m[34mSELECT count(*) as total FROM dbrunner_test[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM dbrunner_test WHERE name = 'dave'[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "dbrunner_test"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "dbrunner_test" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO dbrunner_test (name, age) VALUES ('alice', 30), ('bob', 25), ('carol', NULL)[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 1.2"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35mSQL (0.8ms)[0m  [1m[34mSELECT name, age FROM dbrunner_test ORDER BY name[0m
