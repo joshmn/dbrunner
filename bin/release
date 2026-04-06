@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+VERSION=$1
+
+if [ -z "$VERSION" ]; then
+  CURRENT=$(grep -oP 'VERSION = "\K[^"]+' ./lib/dbrunner/version.rb)
+  echo "error: no version specified. current version is $CURRENT" >&2
+  exit 1
+fi
+
+printf "module Dbrunner\n  VERSION = \"$VERSION\"\nend\n" > ./lib/dbrunner/version.rb
+bundle
+git add Gemfile.lock lib/dbrunner/version.rb
+git commit -m "Bump version for $VERSION"
+git push
+git tag v$VERSION
+git push --tags
+gem build dbrunner.gemspec
+gem push "dbrunner-$VERSION.gem" --host https://rubygems.org
+rm "dbrunner-$VERSION.gem"
