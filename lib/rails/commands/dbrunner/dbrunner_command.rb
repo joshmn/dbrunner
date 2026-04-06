@@ -30,16 +30,18 @@ module Rails
         sql = resolve_sql(sql_or_file)
         connection = resolve_connection
 
-        result = connection.exec_query(sql)
+        begin
+          result = connection.exec_query(sql)
+        rescue ::ActiveRecord::StatementInvalid => e
+          error e.message
+          exit 1
+        end
 
         if result.columns.any?
           render(result)
         else
           say "#{result.rows.length} row(s) affected"
         end
-      rescue ActiveRecord::StatementInvalid => e
-        error e.message
-        exit 1
       end
 
       private
@@ -55,34 +57,34 @@ module Rails
 
         def resolve_connection
           require APP_PATH
-          ActiveRecord::Base.configurations = Rails.application.config.database_configuration
+          ::ActiveRecord::Base.configurations = ::Rails.application.config.database_configuration
 
-          env = Rails::Command.environment
+          env = ::Rails::Command.environment
 
           if options[:database]
             configs_for_options = { env_name: env, name: options[:database] }
-            configs_for_options[:include_hidden] = true if Gem::Version.new(ActiveRecord::VERSION::STRING) >= Gem::Version.new("7.1")
-            db_config = ActiveRecord::Base.configurations.configs_for(**configs_for_options)
+            configs_for_options[:include_hidden] = true if Gem::Version.new(::ActiveRecord::VERSION::STRING) >= Gem::Version.new("7.1")
+            db_config = ::ActiveRecord::Base.configurations.configs_for(**configs_for_options)
 
             unless db_config
-              raise ActiveRecord::AdapterNotSpecified,
+              raise ::ActiveRecord::AdapterNotSpecified,
                 "'#{options[:database]}' database is not configured for '#{env}'."
             end
           else
-            db_config = ActiveRecord::Base.configurations.find_db_config(env)
+            db_config = ::ActiveRecord::Base.configurations.find_db_config(env)
 
             unless db_config
-              raise ActiveRecord::AdapterNotSpecified,
+              raise ::ActiveRecord::AdapterNotSpecified,
                 "No database configured for '#{env}'."
             end
           end
 
-          ActiveRecord::Base.establish_connection(db_config)
+          ::ActiveRecord::Base.establish_connection(db_config)
 
-          if ActiveRecord::Base.respond_to?(:lease_connection)
-            ActiveRecord::Base.lease_connection
+          if ::ActiveRecord::Base.respond_to?(:lease_connection)
+            ::ActiveRecord::Base.lease_connection
           else
-            ActiveRecord::Base.connection
+            ::ActiveRecord::Base.connection
           end
         end
 
