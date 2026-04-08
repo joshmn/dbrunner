@@ -4,6 +4,10 @@
 
 Rails has `runner`, `console`, and `dbconsole`. Now it has `dbrunner`.
 
+## But wait, there's `db:console`
+
+Yeah, and you can STDIN to it if you have your database client installed on the machine you want to run things on. You also don't get output formatting.
+
 ## Install
 
 ```ruby
